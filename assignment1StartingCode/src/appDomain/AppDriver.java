@@ -2,20 +2,13 @@ package appDomain;
 
 
 import models.Command;
-import models.SortField;
-import shapes.Shape;
+
 import utilities.CliParser;
 import utilities.CommandExecutor;
-import utilities.FileHandler;
-import utilities.SortAlgorithm;
-
-import java.io.IOException;
-import java.util.List;
 
 
 public class AppDriver {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
         // refer to demo001 BasicFileIO.java for a simple example on how to
         // read data from a text file
