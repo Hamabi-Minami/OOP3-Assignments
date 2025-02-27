@@ -1,14 +1,14 @@
 package utilities;
 
-import shapes.Prism;
+import shapes.Shape;
 
 import java.util.Comparator;
 
-public class BaseAreaComparator implements Comparator<Prism>
+public class BaseAreaComparator implements Comparator<Shape>
 {
 
     @Override
-    public int compare(Prism o1, Prism o2) {
+    public int compare(Shape o1, Shape o2) {
         return Double.compare(o2.calcBaseArea(), o1.calcBaseArea());
     }
 }

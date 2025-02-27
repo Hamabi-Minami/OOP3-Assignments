@@ -1,26 +1,16 @@
 package shapes;
 
-public abstract class Prism
-{
-    public double getHeight() {
-        return height;
-    }
+public abstract class Prism extends Shape {
+    protected double baseEdge;
 
-    public void setHeight(double height) {
+    public Prism(double height, double baseEdge) {
         this.height = height;
+        this.baseEdge = baseEdge;
     }
 
-    double height;
-
-    public double getSide() {
-        return side;
-    }
-
-    public void setSide(double side) {
-        this.side = side;
-    }
-
-    double side;
+    @Override
     public abstract double calcVolume();
+
+    @Override
     public abstract double calcBaseArea();
 }

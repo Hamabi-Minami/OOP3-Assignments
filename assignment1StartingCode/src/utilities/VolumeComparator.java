@@ -1,13 +1,13 @@
 package utilities;
 
-import shapes.Prism;
+import shapes.Shape;
 
 import java.util.Comparator;
 
-public class VolumeComparator implements Comparator<Prism> {
+public class VolumeComparator implements Comparator<Shape> {
 
     @Override
-    public int compare(Prism o1, Prism o2) {
+    public int compare(Shape o1, Shape o2) {
         return Double.compare(o2.calcVolume(), o1.calcVolume());
     }
 }
